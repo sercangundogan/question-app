@@ -1,0 +1,192 @@
+{
+  "quiz": {
+    "quiz1": {
+      "question1": {
+        "id": "1",
+        "trueanswer": "72",
+        "hints": {
+          "hint1": "70+2",
+          "hint2": "71+1"
+        },
+        "question": "8*9"
+      },
+      "question2": {
+        "id": "2",
+        "trueanswer": "64",
+        "hints": {
+          "hint1": "62+2",
+          "hint2": "63+1"
+        },
+        "question": "8*8"
+      },
+      "question3": {
+        "id": "3",
+        "trueanswer": "56",
+        "hints": {
+          "hint1": "54+2",
+          "hint2": "55+1"
+        },
+        "question": "8*7"
+      },
+      "question4": {
+        "id": "4",
+        "trueanswer": "48",
+        "hints": {
+          "hint1": "46+2",
+          "hint2": "47+1"
+        },
+        "question": "8*6"
+      },
+      "question5": {
+        "id": "5",
+        "trueanswer": "40",
+        "hints": {
+          "hint1": "39+2",
+          "hint2": "39+1"
+        },
+        "question": "8*5"
+      },
+      "question6": {
+        "id": "5",
+        "trueanswer": "32",
+        "hints": {
+          "hint1": "30+2",
+          "hint2": "31+1"
+        },
+        "question": "8*4"
+      },
+      "question7": {
+        "id": "7",
+        "trueanswer": "24",
+        "hints": {
+          "hint1": "22+2",
+          "hint2": "23+1"
+        },
+        "question": "8*3"
+      },
+      "question8": {
+        "id": "8",
+        "trueanswer": "16",
+        "hints": {
+          "hint1": "14+2",
+          "hint2": "15+1"
+        },
+        "question": "8*2"
+      },
+      "question9": {
+        "id": "9",
+        "trueanswer": "8",
+        "hints": {
+          "hint1": "6+2",
+          "hint2": "7+1"
+        },
+        "question": "8*1"
+      },
+      "question10": {
+        "id": "10",
+        "trueanswer": "0",
+        "hints": {
+          "hint1": "0+0",
+          "hint2": "0*0"
+        },
+        "question": "8*0"
+      }
+    },
+    "quiz2": {
+      "question1": {
+        "id": "1",
+        "trueanswer": "9",
+        "hints": {
+          "hint1": "8+1",
+          "hint2": "7+2"
+        },
+        "question": {
+          "image": "1"
+        }
+      },
+      "question2": {
+        "id": "2",
+        "trueanswer": "64",
+        "hints": {
+          "hint1": "62+2",
+          "hint2": "63+1"
+        },
+        "question": "8*8"
+      },
+      "question3": {
+        "id": "3",
+        "trueanswer": "56",
+        "hints": {
+          "hint1": "54+2",
+          "hint2": "55+1"
+        },
+        "question": "8*7"
+      },
+      "question4": {
+        "id": "4",
+        "trueanswer": "256",
+        "hints": {
+          "hint1": "250+6",
+          "hint2": "252+4"
+        },
+        "question": {
+          "image" : "4"
+        }
+      },
+      "question5": {
+        "id": "5",
+        "trueanswer": "40",
+        "hints": {
+          "hint1": "39+2",
+          "hint2": "39+1"
+        },
+        "question": "8*5"
+      },
+      "question6": {
+        "id": "5",
+        "trueanswer": "32",
+        "hints": {
+          "hint1": "30+2",
+          "hint2": "31+1"
+        },
+        "question": "8*4"
+      },
+      "question7": {
+        "id": "7",
+        "trueanswer": "24",
+        "hints": {
+          "hint1": "22+2",
+          "hint2": "23+1"
+        },
+        "question": "8*3"
+      },
+      "question8": {
+        "id": "8",
+        "trueanswer": "16",
+        "hints": {
+          "hint1": "14+2",
+          "hint2": "15+1"
+        },
+        "question": "8*2"
+      },
+      "question9": {
+        "id": "9",
+        "trueanswer": "8",
+        "hints": {
+          "hint1": "6+2",
+          "hint2": "7+1"
+        },
+        "question": "8*1"
+      },
+      "question10": {
+        "id": "10",
+        "trueanswer": "0",
+        "hints": {
+          "hint1": "0+0",
+          "hint2": "0*0"
+        },
+        "question": "8*0"
+      }
+    }
+  }
+}
