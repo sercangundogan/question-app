@@ -40,16 +40,6 @@ const HomepageScreen = ({navigation}) => {
         }, [])
     );
     
-    // useEffect(() => {
-    //     let newQuizList = []
-    //     let questionJSON = questions
-    //     Object.values(questionJSON.quiz).map(quiz => newQuizList.push(quiz))
-    //     setQuizList(newQuizList)
-    //     // Progress
-    //     setProgress(newQuizList)
-        
-    // }, [currentQuestionId])
-    
     const setProgress = async (quizList2) => {
         
         quizList2.map(async (quiz) => {

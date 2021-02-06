@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
-import { View, Text, SafeAreaView, ActivityIndicator, TextInput, Alert, Image, ScrollView, AsyncStorage, KeyboardAvoidingView } from 'react-native'
+import { View, Text, ActivityIndicator, TextInput, Alert, Image, AsyncStorage } from 'react-native'
 // Redux
 import {useDispatch, useSelector} from "react-redux"
 import * as actionTypes from "../redux/actions/actionTypes"
@@ -18,12 +18,9 @@ const QuestionScreen = ({navigation}) => {
     const dispatch = useDispatch()
     const currentQuestionId = useSelector(state => state.question.currentQuestionId)
     const question = useSelector(state => state.question.question)
-    const questionFinished = useSelector(state => state.question.questionFinished)
     const isLoaded = useSelector(state => state.question.isLoaded)
-    const leaveQuestions = useSelector(state => state.question.leaveQuestions)
     const totalQuestion = useSelector(state => state.question.totalQuestion)
     const trueQuestion = useSelector(state => state.question.trueQuestion)
-    const falseQuestion = useSelector(state => state.question.falseQuestion)
     const quizId = useSelector(state => state.question.quizId)
     const score = useSelector(state => state.question.score)
 
@@ -67,13 +64,11 @@ const QuestionScreen = ({navigation}) => {
             Alert.alert("Yanlış Cevap", "Puanınız: " + score, [
                 {text: "Tekrar deneyin"}
             ])
-            // dispatch({type: actionTypes.SEND_FALSE_ANSWER})
         }
         setAnswer(null)
     }
 
     const handleSendQuiz = async () => {
-        let quizResult = 0
         if(answer == question.trueanswer){
             let name = "quiz" + quizId
             dispatch({type: actionTypes.SEND_TRUE_ANSWER}) 
@@ -91,20 +86,6 @@ const QuestionScreen = ({navigation}) => {
         }
                
         
-    }
-    
-    const handleScroll = () => {
-        console.log(scrollRef)
-        scrollRef.scrollToEnd({animated: true})
-    }
-    
-    const handleShowQuestionsAgain = () => {
-        dispatch({type: actionTypes.SHOW_QUESTIONS_AGAIN_REQUEST})
-        dispatch({type: actionTypes.SHOW_QUESTIONS_AGAIN_SUCCESS})
-    }
-    
-    const handleLeaveQuestions = () => {
-        dispatch({type: actionTypes.LEAVE_QUESTIONS})
     }
     
     if(isLoaded){

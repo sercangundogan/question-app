@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import { View, Text } from 'react-native'
-// Redux
-import {useDispatch, useSelector} from "react-redux"
-import * as actionTypes from "../redux/actions/actionTypes"
 
 const ResultScreen = ({route, navigation}) => {
 
@@ -10,9 +7,6 @@ const ResultScreen = ({route, navigation}) => {
     const [quizResult, setQuizresult] = useState()
     const [trueQuestion, setTrueQuestion] = useState()
     const [falseQuestion, setFalseQuestion] = useState()
-    
-    // Redux
-    const dispatch = useDispatch()
     
     useEffect(() => {
         getData()
