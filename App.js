@@ -15,7 +15,7 @@ import {useDispatch, useSelector} from "react-redux"
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-
+// React Navigation Stacks
 const RootStack = createStackNavigator();
 const ResultStack = createStackNavigator();
 
@@ -33,6 +33,7 @@ const AppWrapper = () => {
     return(
           <NavigationContainer>
             <RootStack.Navigator initialRouteName="Anasayfa">
+              {/* Screens */}
               <RootStack.Screen name="Anasayfa" component={HomepageScreen}/>
               <RootStack.Screen name="Quiz" component={QuestionScreen}/>
               <ResultStack.Screen name="Sonuç" component={ResultScreen}/>
@@ -41,12 +42,3 @@ const AppWrapper = () => {
     )
   
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
